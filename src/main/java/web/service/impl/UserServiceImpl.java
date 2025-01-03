@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserService {
         userDao.addUser(user);
     }
 
-    @Transactional
     @Override
     public List<User> getUsers() {
         return userDao.users();
